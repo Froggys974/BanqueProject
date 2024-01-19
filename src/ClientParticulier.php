@@ -55,14 +55,14 @@ class ClientParticulier implements ClientsInterface
         throw new Exception("Compte non trouvé avec le numéro : " . $numeroCompte);
     }
 
-    public function deposerArgent($montant, $numeroCompte)
+    public function deposerArgent($numeroCompte,$montant)
     {
         $compte = $this->trouverCompte($numeroCompte);
         $compte->deposerMontant($montant);
         echo "Dépôt effectué avec succès." . PHP_EOL;
     }
 
-    public function retirerArgent($montant, $numeroCompte)
+    public function retirerArgent($numeroCompte,$montant)
     {
         $compte = $this->trouverCompte($numeroCompte);
         $compte->retirerMontant($montant);

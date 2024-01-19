@@ -30,6 +30,19 @@ $compteClient1 = $client1->getListCompte()[0];
 //$maBanque->demanderCarteBleue($client1,522643); //erreur
 $maBanque->demanderCarteBleue($client1, $compteClient1);
 
-echo $client1->getCarteInfo($compteClient1) ;
+echo $client1->getCarteInfo($compteClient1);
+echo PHP_EOL;
+echo $client1->consulterSolde($compteClient1);
+$client1->deposerArgent($compteClient1,50);
+
+echo PHP_EOL;
+echo $client1->consulterSolde($compteClient1);
+
+$client1->retirerArgent($compteClient1,10);
+
+echo PHP_EOL;
+echo $client1->consulterSolde($compteClient1);
+
+
 
 
