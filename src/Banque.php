@@ -39,15 +39,18 @@ class Banque
         }
     }
 
-    public function demandeCarteBleu(ClientsInterface $client, int $numeroCompte)
+    
+    public function demanderCarteBleue(ClientParticulier $client, int $numeroCompte)
     {
+
         if (in_array($client, $this->listeclient)) {
-            $compteClient = $client->getCompte($numeroCompte);
-            $compteClient.creerCarteBancaire();
+            $client->creerCarteBancaire($numeroCompte);
         } else {
-            echo "Cette personne n'est pas cliente chez nous";
+            echo "Cette personne n'est pas cliente chez nous.";
         }
     }
+
+
 }
 
 

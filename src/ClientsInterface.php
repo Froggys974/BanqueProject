@@ -9,6 +9,9 @@ interface ClientsInterface{
     public function consulterSolde($numeroCompte);
     public function retirerArgent($montant,$numeroCompte);
     public function deposerArgent($montant,$numeroCompte);
-    public function getCompte($numeroCompte);
+    public function creerCarteBancaire($numeroCompte);
+    public function getListCompte();
+
+    public function getCarteInfo($numeroCompte);
     
 }

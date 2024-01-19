@@ -47,4 +47,7 @@ class Compte implements ComptesInterface{
     public function creerCarteBancaire(){
         $this->carteBleu=new CarteBleu($this->numeroCompte);
     }
+    public function getInfoCarte(){
+        return "Numero carte: ".$this->carteBleu->getNumeroCarte().", Code CCV: ".$this->carteBleu->getCodeCCV().", Fin de validite: ".$this->carteBleu->getDateFinValidite();
+    }
 }

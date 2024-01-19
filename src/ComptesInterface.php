@@ -9,5 +9,6 @@ interface ComptesInterface{
 
     public function consulterSolde();
 
-    public function creerCarteBancaire($carteBancaire);
+    public function creerCarteBancaire();
+    public function getInfoCarte();
 }
