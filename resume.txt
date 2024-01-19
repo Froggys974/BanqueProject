@@ -1,0 +1,44 @@
+
+    Exercice: Simuler le fonctionnement d'une banque
+Vous allez simuler le fonctionnement d'une banque en POO selon les règles suivantes:
+- Une banque a un nom et une liste de clients
+- Quand la banque ajoute un client à sa liste, cela créer automatiquement un compte. 
+- Pour s'enregistrer à la banque le client devra fournir les informations suivantes:
+ nom, prenom, âge, ville, job, salaire
+- Un compte en banque est défini par un numéro (généré aléatoirement de 6 chiffres) et d'un solde, 
+
+on pourra retirer, déposer et consulter son solde
+- La banque pourra faire une demande de carte bleue pour son client, et pourra afficher la liste 
+de ses clients (attention à respecter la loi Demeter)
+- Une Carte bleue est affilié à un numéro de compte, contiendra 16 chiffres généré aléatoirement, 
+  une date d'expiration qui sera de 5 ans après la date de création de la CB, 
+  et d'un code CCV de 3 chiffres aléatoire
+- Tester votre code en créant une Banque, 2 Clients, ajouter ces 2 clients à la banque, 
+afficher leur numéro de compte, 
+  faire une demande de CB et afficher les informations de la CB
+
+Class:
+
+Banque : nom, listeClient
+
+Compte: numeroCompte, solde, carteBleue
+
+Clients: nom, prenom, age, ville, job, salaire
+
+CarteBleue: numeroCompte, numeroCarte, codeCCV
+
+Loi demeter: Banque interagit avec certaine methode de Client et Compte(),
+ Clients est seul, CarteBleue est seul aussi
+
+Interface :
+
+GestionComptes: plusieurs comptes possible: compte epargne, compte courant etc
+    =>deposer, retirer, consulterSolde
+GestionCarteBancaires: plusieurs cartes possible exemple carte gold avec different avantages
+    =>//pour l'instant vide
+Pourquoi pas si besoin dans le futur ajouter une interface pour banque mais pas besoin ni forcement le temps
+de reflechir a ca.
+ClientsInterface: differents type de client par exemple particulier ou societe avec differents info
+    =>a voir plus tard si il y a le temps
+
+
