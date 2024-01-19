@@ -32,9 +32,9 @@ Loi demeter: Banque interagit avec certaine methode de Client et Compte(),
 
 Interface :
 
-GestionComptes: plusieurs comptes possible: compte epargne, compte courant etc
+ComptesInterface: plusieurs comptes possible: compte epargne, compte courant etc
     =>deposer, retirer, consulterSolde
-GestionCarteBancaires: plusieurs cartes possible exemple carte gold avec different avantages
+CartesBancairesInterface: plusieurs cartes possible exemple carte gold avec different avantages
     =>//pour l'instant vide
 Pourquoi pas si besoin dans le futur ajouter une interface pour banque mais pas besoin ni forcement le temps
 de reflechir a ca.

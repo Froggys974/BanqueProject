@@ -1,0 +1,17 @@
+{
+    "name": "florent/banque-project",
+    "description": "Simulation of a bank",
+    "authors": [
+        {
+            "name": "Florent",
+            "email": "florent.grondin97@gmail.com"
+        }
+    ],
+    "autoload":
+    {
+        "psr-4": {
+            "app\\" : "src/"
+        }
+    },
+    "require": {}
+}
